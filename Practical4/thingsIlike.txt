@@ -2,7 +2,6 @@ I like 1.
 I like 2.
 I like 3.
 I like 4.
-I like 5.
 I do not like 6.
 I like 7 very much.
 I like a1.
