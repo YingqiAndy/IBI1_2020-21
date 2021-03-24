@@ -1,0 +1,9 @@
+Question:
+Compare the changes of new cases in China and Austria.
+(Plot new cases in China in one colour and new cases in the Austria in another colour over time.)
+Line number:71-98
+
+Discussion: The new cases in China over time were plotted in green and the new cases in Austria over time were in yellow.
+            From the graph, there were more new cases in China during the selected time frame.
+            The number of new cases in China increased first and then decreased in the medium term.
+            Australian cases increased at a later stage.
