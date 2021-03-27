@@ -20,7 +20,7 @@ covid_data.describe()  #shows the number of entries, mean, standard deviation an
 #get the data of total_cases in Afghanistan
 my_columns = [True, True, False, False, True, False]
 total_cases_Afghanistan =[]
-for i in range(7996):
+for i in range(len(covid_data)):
     if covid_data.loc[i,"location"]=="Afghanistan":
         total_cases_Afghanistan.append(True)
     else:
@@ -31,7 +31,7 @@ print(covid_data.loc[total_cases_Afghanistan,"total_cases"])
 #get the data of total new cases in the World
 my_columns1 =[True, True, True, False, False, False ]
 new_cases_World =[]
-for i in range(7996):
+for i in range(len(covid_data)):
     if covid_data.loc[i,"location"]=="World":
         new_cases_World.append(True)
     else:
@@ -72,7 +72,7 @@ plt.show()  #show the plot
 #get the data of new cases in China
 my_columns2 =[True, True, True, False, False, False ]
 new_cases_China =[]
-for i in range(7996):
+for i in range(len(covid_data)):
     if covid_data.loc[i,"location"]=="China":
         new_cases_China.append(True)
     else:
@@ -81,7 +81,7 @@ China_new_cases=covid_data.loc[new_cases_China,"new_cases"]
 #get the data of new cases in Austria
 my_columns3 =[True, True, True, False, False, False ]
 new_cases_Austria =[]
-for i in range(7996):
+for i in range(len(covid_data)):
     if covid_data.loc[i,"location"]=="Austria":
         new_cases_Austria.append(True)
     else:
