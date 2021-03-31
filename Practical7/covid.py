@@ -13,7 +13,7 @@ os.listdir()  #View the files in the current directory
 covid_data=pd.read_csv("full_data.csv")
 #show the correct code for showing all columns, and every second row between (and
 #including) 0 and 10
-print(covid_data.iloc[0:10:2,:])
+print(covid_data.iloc[0:11:2,:])
 covid_data.info()  #show information of covid_data.csv
 covid_data.describe()  #shows the number of entries, mean, standard deviation and a number of quantiles.
 #use a Boolean to access entries
