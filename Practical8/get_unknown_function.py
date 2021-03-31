@@ -6,28 +6,17 @@ infile=open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa','r')
 outfile=open('unknown_function.fa','w')
 #creat a cycle for extracting specfic data
 #extract names of genes
-for line in infile:
-    if line.startswith('>'):
-        if re.search(r'unknown function',line):
-            name= re.findall(r'gene:(.+?)\s',line)
-
-            #extract sequence of genes that unknown function
-            seq =''
-            while True:
-                line =next(infile)
-                if line.startswith('>'):
-                    break
-                line2=line.replace('\n','')
-
-                seq =seq + line2           #the sequence of genes that unknown function
-            f ='>' + name[0]             #creat a variable to show the name and length of genes
-            #write the outfile
-            outfile.write(f'{f:30}')
-            outfile.write(('length: '+str(int(len(seq)))))
-            outfile.write(('\n'))
-            outfile.write(seq)
-            outfile.write('\n')
-
+#read the infile
+infile1=infile.read()
+#Delete all newline characters
+infile1=''.join(infile1.split('\n'))
+infile1=infile1.replace('\n','')
+#extract specific names and sequence
+name=re.findall(r'gene:(.+?)\s.*?unknown function',infile1)
+seq= re.findall(r'unknown function.*?](.+?)>',infile1)
+#write the outfile
+for i in range(len(seq)):
+    outfile.write(f'>{name[i]:30}length: {len(seq[i])}\n{seq[i]}\n')
 #store the infile and outfile
 outfile.close()
 infile.close()
