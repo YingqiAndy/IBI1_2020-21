@@ -17,6 +17,7 @@ print(frequencydictionary)
 #pie chart
 #specifies the fraction of the radius with which to offset each wedge
 
+plt.title('Coronavirus frequency')
 plt.pie(frequency, labels=Country, autopct='%1.1f%%',shadow=True, startangle=90)
 plt.axis('equal') #Equal aspect ratio ensures that pie is drawn as a circle
 
