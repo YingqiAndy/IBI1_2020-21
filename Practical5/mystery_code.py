@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: Extract random integers between 1 and 100 until you reach an integer less than or equal to 50, and output this integer
+# Answer: Selects a random number between 1 and 100 until a number less than 50 is selected, which is then printed.
 
 # Import libraries
 # randint allows drawing a random number, 
