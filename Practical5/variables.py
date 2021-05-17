@@ -1,4 +1,4 @@
-#3.1 some simple math
+#3.1 Some simple math
 a = 130302
 b = 190784
 c = 100321
