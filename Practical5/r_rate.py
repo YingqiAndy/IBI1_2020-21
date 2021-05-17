@@ -1,5 +1,5 @@
 # R rate
-n=84 #the number of IBI1 students
+n=84 #The number of IBI1 students
 r=float(input("R:")) #Input R rate
 
 for i in range(0,5):
