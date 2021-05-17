@@ -18,15 +18,15 @@ covid_data.info()  #show information of covid_data.csv
 covid_data.describe()  #shows the number of entries, mean, standard deviation and a number of quantiles.
 #use a Boolean to access entries
 #get the data of total_cases in Afghanistan
-my_columns = [True, True, False, False, True, False]
+location = covid_data.iloc[:,1]
 total_cases_Afghanistan =[]
 for i in range(len(covid_data)):
-    if covid_data.loc[i,"location"]=="Afghanistan":
-        total_cases_Afghanistan.append(True)
+    if location[i] =="Afghanistan":
+        c = True
     else:
-        total_cases_Afghanistan.append(False)
-
-print(covid_data.loc[total_cases_Afghanistan,"total_cases"])
+        c = False
+    total_cases_Afghanistan.append(c)
+print(covid_data.iloc[total_cases_Afghanistan,[1,4]])
 
 #get the data of total new cases in the World
 my_columns1 =[True, True, True, False, False, False ]
