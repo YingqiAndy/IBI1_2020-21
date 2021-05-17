@@ -22,4 +22,5 @@ plt.boxplot(average_length,
             showfliers = True,
             notch= False,
             )
+plt.title('exon length')
 plt.show()  #show the boxplot
