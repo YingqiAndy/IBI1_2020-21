@@ -97,10 +97,10 @@ carbohydrate=childNodesCounter(tree,'carbohydrate')
 
 
 #out put the number of childNodes associated with specific macromolecules
-print("the number of childNodes associated with ‘DNA’ is",DNA,'.')
-print("the number of childNodes associated with ‘RNA’ is",RNA,'.')
-print("the number of childNodes associated with ‘protein’ is",protein,'.')
-print("the number of childNodes associated with ‘carbohydrate’ is",carbohydrate,'.')
+print("the number of childNodes associated with ‘DNA’ is",DNA,'.')   #8651
+print("the number of childNodes associated with ‘RNA’ is",RNA,'.')   #11004
+print("the number of childNodes associated with ‘protein’ is",protein,'.')   #33459
+print("the number of childNodes associated with ‘carbohydrate’ is",carbohydrate,'.')   #4879
 
 #Set specific pie chart parameters
 labels = ['DNA', 'RNA', 'protein', 'carbohydrate']
