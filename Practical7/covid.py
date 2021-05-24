@@ -50,8 +50,11 @@ plt.boxplot(world_new_cases,
             showbox= True,
             showcaps = True,
             showfliers = True,
+            showmeans=True,
             notch= False,
             )
+plt.title('new cases worldwide')
+plt.ylabel('number')
 plt.show()  #show the boxplot of world
 
 
